@@ -1,0 +1,9 @@
+#=======================================
+# WANNIER90 	
+#=======================================
+
+F90=mpif90
+FCOPTS=$(FFLAGS) -qfree=f90 
+LDOPTS=-q64 -qthreaded
+
+LIBS = /home/yu/workspace/espresso/espresso-5.2.0/lapack-3.2/lapack.a -L/usr/lib -lessl -L/opt/ibm/xlmass/8.1.2/lib -lmass -lmassv -lmass_simdp8
